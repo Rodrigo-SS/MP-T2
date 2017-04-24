@@ -43,15 +43,15 @@ TEST(RomanTest, Verificacao_e_Arabico){
 	EXPECT_EQ(-1, verificacao((char*)"MMCDDI"));
 }
 
-// //testa os casos especiais que sao invalidos(ex.: XLX, XCX, CDC, CMC, VIX)
-// TEST(RomanTest, Casos_especiais){
-// 	EXPECT_EQ(0, casos_especiais((char*)"CXC"));
-// 	EXPECT_EQ(0, casos_especiais((char*)"XIX"));
-// 	EXPECT_EQ(0, casos_especiais((char*)"MCM"));
-// 	EXPECT_EQ(-1, casos_especiais((char*)"VIX"));
-// 	EXPECT_EQ(-1, casos_especiais((char*)"XCX"));
-// 	EXPECT_EQ(-1, casos_especiais((char*)"CDC"));
-// }
+//testa os casos especiais que sao invalidos(ex.: XLX, XCX, CDC, CMC, VIX)
+TEST(RomanTest, Casos_especiais){
+	EXPECT_EQ(0, casos_especiais((char*)"CXC"));
+	EXPECT_EQ(0, casos_especiais((char*)"XIX"));
+	EXPECT_EQ(0, casos_especiais((char*)"MCM"));
+	EXPECT_EQ(-1, casos_especiais((char*)"VIX"));
+	EXPECT_EQ(-1, casos_especiais((char*)"XCX"));
+	EXPECT_EQ(-1, casos_especiais((char*)"CDC"));
+}
 
 // //resultado final dos numeros romanos
 // TEST(RomanTest, Resultado){
