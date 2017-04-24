@@ -33,15 +33,15 @@ TEST(RomanTest, Duplicidade){
 	EXPECT_EQ(-1, casos_duplos((char*)"DDXL"));
 }
 
-// //testa as funçoes de verificacao e arabico
-// TEST(RomanTest, Verificacao_e_Arabico){
-// 	EXPECT_EQ(190, verificacao((char*)"CXC"));
-// 	EXPECT_EQ(1919, verificacao((char*)"MCMXIX"));
-// 	EXPECT_EQ(999, verificacao((char*)"CMXCIX"));
-// 	EXPECT_EQ(-1, verificacao((char*)"IIV"));
-// 	EXPECT_EQ(-1, verificacao((char*)"DCVLMI"));
-// 	EXPECT_EQ(-1, verificacao((char*)"MMCDDI"));
-// }
+//testa as funçoes de verificacao e arabico
+TEST(RomanTest, Verificacao_e_Arabico){
+	EXPECT_EQ(190, verificacao((char*)"CXC"));
+	EXPECT_EQ(1919, verificacao((char*)"MCMXIX"));
+	EXPECT_EQ(999, verificacao((char*)"CMXCIX"));
+	EXPECT_EQ(-1, verificacao((char*)"IIV"));
+	EXPECT_EQ(-1, verificacao((char*)"DCVLMI"));
+	EXPECT_EQ(-1, verificacao((char*)"MMCDDI"));
+}
 
 // //testa os casos especiais que sao invalidos(ex.: XLX, XCX, CDC, CMC, VIX)
 // TEST(RomanTest, Casos_especiais){
