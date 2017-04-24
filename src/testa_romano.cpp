@@ -23,15 +23,15 @@ TEST(RomanTest, Quatro){
 	EXPECT_EQ(-1, quatro_letras((char*)"CCCC"));
 }
 
-// //testa se ha duplicidade
-// TEST(RomanTest, Duplicidade){
-// 	EXPECT_EQ(0, casos_duplos((char*)"III"));
-// 	EXPECT_EQ(0, casos_duplos((char*)"XLII"));
-// 	EXPECT_EQ(0, casos_duplos((char*)"MMDCXXXIII"));
-// 	EXPECT_EQ(-1, casos_duplos((char*)"VVI"));
-// 	EXPECT_EQ(-1, casos_duplos((char*)"LLVII"));
-// 	EXPECT_EQ(-1, casos_duplos((char*)"DDXL"));
-// }
+//testa se ha duplicidade
+TEST(RomanTest, Duplicidade){
+	EXPECT_EQ(0, casos_duplos((char*)"III"));
+	EXPECT_EQ(0, casos_duplos((char*)"XLII"));
+	EXPECT_EQ(0, casos_duplos((char*)"MMDCXXXIII"));
+	EXPECT_EQ(-1, casos_duplos((char*)"VVI"));
+	EXPECT_EQ(-1, casos_duplos((char*)"LLVII"));
+	EXPECT_EQ(-1, casos_duplos((char*)"DDXL"));
+}
 
 // //testa as funçoes de verificacao e arabico
 // TEST(RomanTest, Verificacao_e_Arabico){
