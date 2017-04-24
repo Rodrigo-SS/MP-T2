@@ -16,31 +16,26 @@ int i=0, c;
 	c=letras_diferentes(palavra);
 	if (c==-1){
 		return -1;
-		exit(0);
 	}
 
 	c=quatro_letras(palavra);
 	if (c==-1){
 		return -1;
-		exit(0);
 	}
 
 	c=casos_duplos(palavra);
 	if (c==-1){
 		return -1;
-		exit(0);
 	}
 
 	c=casos_especiais(palavra);
 	if (c==-1){
 		return -1;
-		exit(0);
 	}
 
 	c=verificacao(palavra);
 	if (c==-1){
 		return -1;
-		exit(0);
 	}
 
 	return c;
