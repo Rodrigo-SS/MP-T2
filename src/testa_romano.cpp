@@ -13,15 +13,15 @@ TEST(RomanTest, Letras){
 	EXPECT_EQ(-1, letras_diferentes((char*)"DCU"));
 }
 
-// //testa se há quatro letras iguais
-// TEST(RomanTest, Quatro){
-// 	EXPECT_EQ(0, quatro_letras((char*)"XVII"));
-// 	EXPECT_EQ(0, quatro_letras((char*)"III"));
-// 	EXPECT_EQ(0, quatro_letras((char*)"CCC"));
-// 	EXPECT_EQ(-1, quatro_letras((char*)"DCIIII"));
-// 	EXPECT_EQ(-1, quatro_letras((char*)"VVVV"));
-// 	EXPECT_EQ(-1, quatro_letras((char*)"CCCC"));
-// }
+//testa se há quatro letras iguais
+TEST(RomanTest, Quatro){
+	EXPECT_EQ(0, quatro_letras((char*)"XVII"));
+	EXPECT_EQ(0, quatro_letras((char*)"III"));
+	EXPECT_EQ(0, quatro_letras((char*)"CCC"));
+	EXPECT_EQ(-1, quatro_letras((char*)"DCIIII"));
+	EXPECT_EQ(-1, quatro_letras((char*)"VVVV"));
+	EXPECT_EQ(-1, quatro_letras((char*)"CCCC"));
+}
 
 // //testa se ha duplicidade
 // TEST(RomanTest, Duplicidade){
